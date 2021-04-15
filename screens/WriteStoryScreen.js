@@ -35,7 +35,7 @@ export default class WriteStoryScreen extends React.Component {
               placeholder = {'Author'}
           </TextInput>
 
-          <TextInput style = {styles.storyBox}>
+          <TextInput style = {styles.storyBox, {multiline: true}}>
               onChangeText = {(storyText)=>{
                   this.setState({storyText: storyText})
               }}
